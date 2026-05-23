@@ -1,0 +1,26 @@
+{
+    "name": "track-any-device/mcp",
+    "description": "MCP server, tools, and support classes for the Track Any Device platform.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "laravel/framework": "^13.7",
+        "laravel/mcp": "^0.7.0",
+        "track-any-device/core": "^0.0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "TrackAnyDevice\\Mcp\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TrackAnyDevice\\Mcp\\McpServiceProvider"
+            ]
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "stable"
+}
